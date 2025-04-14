@@ -1,0 +1,321 @@
+{
+  "Patient": {
+    "id": "patient-004",
+    "identifier": "MRN45678",
+    "name": "Robert Wilson",
+    "gender": "Male",
+    "birth_date": "1953-08-03",
+    "address": "234 Pine Street, Anytown, USA",
+    "telecom": "555-456-7890",
+    "managing_organization": "Anytown Medical Center"
+  },
+  "Encounters": [
+    {
+      "id": "encounter-001",
+      "patient_id": "patient-004",
+      "status": "finished",
+      "class": "outpatient",
+      "type": "annual wellness visit",
+      "period_start": "2023-07-15T11:00:00",
+      "period_end": "2023-07-15T12:00:00",
+      "reason_code": "Z00.00",
+      "service_provider": "Anytown Medical Center"
+    },
+    {
+      "id": "encounter-002",
+      "patient_id": "patient-004",
+      "status": "finished",
+      "class": "outpatient",
+      "type": "procedure",
+      "period_start": "2018-05-22T07:30:00",
+      "period_end": "2018-05-22T09:30:00",
+      "reason_code": "N40.1",
+      "service_provider": "Anytown Urology"
+    },
+    {
+      "id": "encounter-003",
+      "patient_id": "patient-004",
+      "status": "finished",
+      "class": "outpatient",
+      "type": "procedure",
+      "period_start": "2020-06-10T08:00:00",
+      "period_end": "2020-06-10T10:00:00",
+      "reason_code": "Z12.11",
+      "service_provider": "Anytown Gastroenterology"
+    },
+    {
+      "id": "encounter-004",
+      "patient_id": "patient-004",
+      "status": "finished",
+      "class": "outpatient",
+      "type": "procedure",
+      "period_start": "2019-11-05T08:00:00",
+      "period_end": "2019-11-12T09:00:00",
+      "reason_code": "H25.9",
+      "service_provider": "Anytown Ophthalmology"
+    },
+    {
+      "id": "encounter-005",
+      "patient_id": "patient-004",
+      "status": "finished",
+      "class": "outpatient",
+      "type": "urology follow-up",
+      "period_start": "2023-03-20T14:00:00",
+      "period_end": "2023-03-20T14:30:00",
+      "reason_code": "N40.1",
+      "service_provider": "Anytown Urology"
+    }
+  ],
+  "Conditions": [
+    {
+      "id": "condition-001",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-001",
+      "code": "N40.1",
+      "clinical_status": "active",
+      "onset_date": "2012-10-12T00:00:00",
+      "abatement_date": null,
+      "recorded_date": "2012-10-12T00:00:00"
+    },
+    {
+      "id": "condition-002",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-001",
+      "code": "I10",
+      "clinical_status": "active",
+      "onset_date": "2005-05-28T00:00:00",
+      "abatement_date": null,
+      "recorded_date": "2005-05-28T00:00:00"
+    },
+    {
+      "id": "condition-003",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-001",
+      "code": "M19.90",
+      "clinical_status": "active",
+      "onset_date": "2010-03-15T00:00:00",
+      "abatement_date": null,
+      "recorded_date": "2010-03-15T00:00:00"
+    },
+    {
+      "id": "condition-004",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-004",
+      "code": "H25.9",
+      "clinical_status": "resolved",
+      "onset_date": "2018-09-10T00:00:00",
+      "abatement_date": "2019-11-12T00:00:00",
+      "recorded_date": "2018-09-10T00:00:00"
+    }
+  ],
+  "Observations": [
+    {
+      "id": "observation-001",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-001",
+      "code": "85354-9",
+      "value": "138/76",
+      "unit": "mmHg",
+      "interpretation": "borderline",
+      "effective_date": "2023-07-15T11:15:00",
+      "status": "final"
+    },
+    {
+      "id": "observation-002",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-001",
+      "code": "2857-1",
+      "value": "1.8",
+      "unit": "ng/mL",
+      "interpretation": "normal",
+      "effective_date": "2023-07-15T11:20:00",
+      "status": "final"
+    },
+    {
+      "id": "observation-003",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-005",
+      "code": "28564-3",
+      "value": "45",
+      "unit": "mL",
+      "interpretation": "normal",
+      "effective_date": "2023-03-20T14:15:00",
+      "status": "final"
+    }
+  ],
+  "Procedures": [
+    {
+      "id": "procedure-001",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-002",
+      "code": "52601",
+      "performed_date": "2018-05-22T08:00:00",
+      "status": "completed",
+      "performer": "Dr. Joseph Clark"
+    },
+    {
+      "id": "procedure-002",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-003",
+      "code": "45378",
+      "performed_date": "2020-06-10T08:30:00",
+      "status": "completed",
+      "performer": "Dr. David Miller"
+    },
+    {
+      "id": "procedure-003",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-004",
+      "code": "66984",
+      "performed_date": "2019-11-05T08:30:00",
+      "status": "completed",
+      "performer": "Dr. Sarah Chen"
+    },
+    {
+      "id": "procedure-004",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-004",
+      "code": "66984",
+      "performed_date": "2019-11-12T08:30:00",
+      "status": "completed",
+      "performer": "Dr. Sarah Chen"
+    },
+    {
+      "id": "procedure-005",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-005",
+      "code": "51798",
+      "performed_date": "2023-03-20T14:10:00",
+      "status": "completed",
+      "performer": "Dr. Joseph Clark"
+    }
+  ],
+  "MedicationRequests": [
+    {
+      "id": "med-request-001",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-001",
+      "medication_code": "858069",
+      "authored_on": "2023-07-15T11:45:00",
+      "dosage_instruction": "0.4mg daily",
+      "status": "active",
+      "intent": "order"
+    },
+    {
+      "id": "med-request-002",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-001",
+      "medication_code": "197361",
+      "authored_on": "2023-07-15T11:45:00",
+      "dosage_instruction": "5mg daily",
+      "status": "active",
+      "intent": "order"
+    },
+    {
+      "id": "med-request-003",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-001",
+      "medication_code": "313782",
+      "authored_on": "2023-07-15T11:45:00",
+      "dosage_instruction": "500mg as needed for pain",
+      "status": "active",
+      "intent": "order"
+    }
+  ],
+  "CarePlans": [
+    {
+      "id": "careplan-001",
+      "patient_id": "patient-004",
+      "status": "active",
+      "intent": "plan",
+      "title": "BPH Management Plan",
+      "period_start": "2023-07-15T00:00:00",
+      "period_end": "2024-07-15T00:00:00"
+    },
+    {
+      "id": "careplan-002",
+      "patient_id": "patient-004",
+      "status": "active",
+      "intent": "plan",
+      "title": "Hypertension Management Plan",
+      "period_start": "2023-07-15T00:00:00",
+      "period_end": "2024-07-15T00:00:00"
+    },
+    {
+      "id": "careplan-003",
+      "patient_id": "patient-004",
+      "status": "active",
+      "intent": "plan",
+      "title": "Osteoarthritis Management Plan",
+      "period_start": "2023-07-15T00:00:00",
+      "period_end": "2024-07-15T00:00:00"
+    }
+  ],
+  "ClinicalNotes": [
+    {
+      "id": "note-001",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-001",
+      "related_condition_id": null,
+      "related_procedure_id": null,
+      "related_observation_id": "observation-001",
+      "related_medication_id": null,
+      "author": "Dr. Emily Johnson",
+      "note_text": "72-year-old male presents for annual wellness visit. Blood pressure is well-controlled at 138/76 mmHg. PSA remains stable at 1.8 ng/mL. Patient reports occasional knee pain but manageable with acetaminophen as needed. No urinary complaints since TURP in 2018. Vision satisfactory since bilateral cataract surgery in 2019. Continuing current medications. Recommended influenza and pneumococcal vaccinations.",
+      "created_on": "2023-07-15T11:55:00",
+      "note_type": "progress note"
+    },
+    {
+      "id": "note-002",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-002",
+      "related_procedure_id": "procedure-001",
+      "related_condition_id": "condition-001",
+      "related_observation_id": null,
+      "related_medication_id": null,
+      "author": "Dr. Joseph Clark",
+      "note_text": "Patient underwent transurethral resection of prostate (TURP) for BPH with urinary retention. Procedure was performed without complications. Estimated blood loss was minimal. Prostate tissue was sent for pathology. Patient tolerated procedure well. Foley catheter was placed and will remain for 3 days. Follow-up scheduled in 2 weeks for catheter removal and post-operative assessment.",
+      "created_on": "2018-05-22T09:15:00",
+      "note_type": "procedure note"
+    },
+    {
+      "id": "note-003",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-003",
+      "related_procedure_id": "procedure-002",
+      "related_condition_id": null,
+      "related_observation_id": null,
+      "related_medication_id": null,
+      "author": "Dr. David Miller",
+      "note_text": "Patient underwent screening colonoscopy. Preparation was good. No polyps, masses, or significant diverticulosis were identified. The examination was complete to the cecum. Patient tolerated the procedure well and was discharged in stable condition. Recommend routine follow-up colonoscopy in 10 years.",
+      "created_on": "2020-06-10T09:45:00",
+      "note_type": "procedure note"
+    },
+    {
+      "id": "note-004",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-004",
+      "related_procedure_id": "procedure-004",
+      "related_condition_id": "condition-004",
+      "related_observation_id": null,
+      "related_medication_id": null,
+      "author": "Dr. Sarah Chen",
+      "note_text": "Patient underwent cataract surgery on left eye, completing bilateral procedures. Surgery was performed using phacoemulsification with posterior chamber IOL implantation. No complications were encountered. Post-operative instructions provided. Follow-up scheduled for 1 day, 1 week, and 1 month post-procedure.",
+      "created_on": "2019-11-12T09:15:00",
+      "note_type": "procedure note"
+    },
+    {
+      "id": "note-005",
+      "patient_id": "patient-004",
+      "encounter_id": "encounter-005",
+      "related_condition_id": "condition-001",
+      "related_procedure_id": "procedure-005",
+      "related_observation_id": "observation-003",
+      "related_medication_id": "med-request-001",
+      "author": "Dr. Joseph Clark",
+      "note_text": "Patient presents for annual BPH follow-up. Reports good urinary stream with no significant nocturia, urgency, or hesitancy since TURP in 2018. Post-void residual is 45mL (normal). PSA remains stable. Continuing tamsulosin for maintenance therapy. Patient educated on importance of annual follow-up. Return in 1 year for routine assessment.",
+      "created_on": "2023-03-20T14:25:00",
+      "note_type": "progress note"
+    }
+  ]
+}
