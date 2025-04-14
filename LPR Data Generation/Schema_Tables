@@ -1,0 +1,11 @@
+Patient
+│
+├── Encounter (linked via patient_id)
+│   ├── Condition (linked via encounter_id & patient_id)
+│   ├── Observation (linked via encounter_id & patient_id)
+│   ├── Procedure (linked via encounter_id & patient_id)
+│   └── MedicationRequest (linked via encounter_id & patient_id)
+│
+├── CarePlan (linked via patient_id)
+│
+└── ClinicalNote (flexible links to Encounter, Condition, etc.)
