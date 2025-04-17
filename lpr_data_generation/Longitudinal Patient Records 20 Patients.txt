@@ -1,0 +1,445 @@
+# Longitudinal Patient Summary - 20 Patient Records (Revised)
+
+## Patient 1: Mary Smith
+- **Age:** 62
+- **Sex:** Female
+- **Medical History:**
+  - Hypertension (diagnosed 2010)
+  - Hyperlipidemia (diagnosed 2012)
+  - Osteoarthritis (diagnosed 2015)
+- **Procedures/Surgeries:**
+  - Colonoscopy (2018, 2023)
+  - Cataract surgery, right eye (2022)
+- **Current Medications:**
+  - Lisinopril 10mg daily
+  - Atorvastatin 20mg daily
+  - Acetaminophen 500mg as needed for pain
+- **Recent Labs:**
+  - BP: 134/82 mmHg
+  - LDL: 110 mg/dL
+- **Notable Events:**
+  - Annual wellness visits
+  - Physical therapy for knee pain (2021)
+
+## Patient 2: John Davis
+- **Age:** 57
+- **Sex:** Male
+- **Medical History:**
+  - Type 2 Diabetes (diagnosed 2013)
+  - Hypertension (diagnosed 2010)
+  - GERD (diagnosed 2015)
+- **Procedures/Surgeries:**
+  - Upper endoscopy (2016)
+  - Colonoscopy (2021)
+- **Current Medications:**
+  - Metformin 1000mg twice daily
+  - Lisinopril 20mg daily
+  - Omeprazole 20mg daily
+- **Recent Labs:**
+  - HbA1c: 7.1% (target <7.0%)
+  - BP: 138/84 mmHg
+  - Fasting glucose: 136 mg/dL
+- **Notable Events:**
+  - Diabetic retinopathy screening (annually)
+  - Diabetic foot exam (annually)
+
+## Patient 3: Susan Johnson
+- **Age:** 48
+- **Sex:** Female
+- **Medical History:**
+  - Migraine headaches (diagnosed 2008)
+  - Anxiety disorder (diagnosed 2014)
+  - Hypothyroidism (diagnosed 2017)
+- **Procedures/Surgeries:**
+  - Wisdom teeth extraction (2015)
+  - CT scan of sinuses (2019)
+- **Current Medications:**
+  - Sumatriptan 50mg as needed
+  - Levothyroxine 75mcg daily
+  - Sertraline 50mg daily
+- **Recent Labs:**
+  - TSH: 2.8 mIU/L (normal range)
+  - CBC: Within normal limits
+- **Notable Events:**
+  - Neurology consultation (2019)
+  - Annual physical examinations
+
+## Patient 4: Robert Wilson
+- **Age:** 72
+- **Sex:** Male
+- **Medical History:**
+  - Benign Prostatic Hyperplasia (diagnosed 2012)
+  - Hypertension (diagnosed 2005)
+  - Osteoarthritis (diagnosed 2010)
+- **Procedures/Surgeries:**
+  - Transurethral resection of prostate (TURP) (2018)
+  - Colonoscopy (2020)
+  - Cataract surgery, bilateral (2019)
+- **Current Medications:**
+  - Tamsulosin 0.4mg daily
+  - Amlodipine 5mg daily
+  - Acetaminophen 500mg as needed
+- **Recent Labs:**
+  - BP: 138/76 mmHg
+  - PSA: 1.8 ng/mL
+- **Notable Events:**
+  - Annual wellness visits
+  - Post-void residual testing (annually)
+
+## Patient 5: Jennifer Garcia
+- **Age:** 35
+- **Sex:** Female
+- **Medical History:**
+  - Asthma (diagnosed 2002)
+  - Seasonal allergies (diagnosed 2000)
+  - Iron deficiency anemia (diagnosed 2018)
+- **Procedures/Surgeries:**
+  - Pulmonary function test (2020)
+  - Endoscopy (2019)
+- **Current Medications:**
+  - Albuterol inhaler as needed
+  - Fluticasone nasal spray daily
+  - Cetirizine 10mg daily
+  - Ferrous sulfate 325mg daily
+- **Recent Labs:**
+  - Spirometry: FEV1 85% predicted
+  - Hemoglobin: 11.8 g/dL
+- **Notable Events:**
+  - Emergency room visit for asthma exacerbation (2021)
+  - Annual physical examinations
+
+## Patient 6: Michael Brown
+- **Age:** 65
+- **Sex:** Male
+- **Medical History:**
+  - Coronary Artery Disease (diagnosed 2016)
+  - Type 2 Diabetes (diagnosed 2010)
+  - Hyperlipidemia (diagnosed 2008)
+- **Procedures/Surgeries:**
+  - Coronary angiogram (2016)
+  - Percutaneous coronary intervention with stent placement (2016)
+  - Stress test (2018, 2022)
+- **Current Medications:**
+  - Aspirin 81mg daily
+  - Atorvastatin 40mg daily
+  - Metformin 1000mg twice daily
+  - Metoprolol 25mg twice daily
+- **Recent Labs:**
+  - HbA1c: 6.8%
+  - LDL: 82 mg/dL
+  - BP: 132/78 mmHg
+- **Notable Events:**
+  - Cardiology follow-ups (biannually)
+  - Annual diabetic checks
+
+## Patient 7: Lisa Martinez
+- **Age:** 42
+- **Sex:** Female
+- **Medical History:**
+  - Depression (diagnosed 2018)
+  - Irritable Bowel Syndrome (diagnosed 2016)
+  - Tension headaches (diagnosed 2015)
+- **Procedures/Surgeries:**
+  - Colonoscopy (2017)
+  - MRI brain (2016)
+- **Current Medications:**
+  - Escitalopram 10mg daily
+  - Dicyclomine 10mg as needed
+  - Ibuprofen 400mg as needed
+- **Recent Labs:**
+  - CBC: Within normal limits
+  - Comprehensive metabolic panel: Within normal limits
+- **Notable Events:**
+  - Psychiatric follow-ups (quarterly)
+  - Annual physical examinations
+
+## Patient 8: William Taylor
+- **Age:** 58
+- **Sex:** Male
+- **Medical History:**
+  - Obstructive Sleep Apnea (diagnosed 2019)
+  - Hypertension (diagnosed 2014)
+  - Obesity (BMI 32, diagnosed 2010)
+- **Procedures/Surgeries:**
+  - Sleep study (2019)
+  - Upper endoscopy (2020)
+- **Current Medications:**
+  - Lisinopril 20mg daily
+  - Hydrochlorothiazide 12.5mg daily
+- **Recent Labs:**
+  - BP: 142/88 mmHg
+  - Sleep study: AHI 22 events/hour
+  - BMI: 32 kg/m²
+- **Notable Events:**
+  - CPAP therapy initiated (2019)
+  - Weight management consultations (2020-2022)
+
+## Patient 9: Patricia Rodriguez
+- **Age:** 68
+- **Sex:** Female
+- **Medical History:**
+  - Rheumatoid Arthritis (diagnosed 2012)
+  - Hypertension (diagnosed 2008)
+  - Osteoporosis (diagnosed 2018)
+- **Procedures/Surgeries:**
+  - DEXA scan (2018, 2022)
+  - Knee arthroscopy (2016)
+  - Colonoscopy (2019)
+- **Current Medications:**
+  - Methotrexate 15mg weekly
+  - Folic acid 1mg daily
+  - Alendronate 70mg weekly
+  - Lisinopril 10mg daily
+- **Recent Labs:**
+  - BP: 128/78 mmHg
+  - DEXA T-score: -2.8 (spine)
+- **Notable Events:**
+  - Rheumatology follow-ups (quarterly)
+  - Annual physical examinations
+
+## Patient 10: David Miller
+- **Age:** 52
+- **Sex:** Male
+- **Medical History:**
+  - GERD (diagnosed 2015)
+  - Lower back pain (diagnosed 2012)
+  - Hyperlipidemia (diagnosed 2018)
+- **Procedures/Surgeries:**
+  - Upper endoscopy (2016, 2021)
+  - MRI lumbar spine (2018)
+- **Current Medications:**
+  - Omeprazole 20mg daily
+  - Naproxen 375mg as needed
+  - Atorvastatin 10mg daily
+- **Recent Labs:**
+  - LDL: 128 mg/dL
+  - Liver function tests: Within normal limits
+- **Notable Events:**
+  - Physical therapy for back pain (2018, 2022)
+  - Annual physical examinations
+
+## Patient 11: Elizabeth Anderson
+- **Age:** 75
+- **Sex:** Female
+- **Medical History:**
+  - Atrial Fibrillation (diagnosed 2017)
+  - Osteoarthritis (diagnosed 2010)
+  - Glaucoma (diagnosed 2018)
+- **Procedures/Surgeries:**
+  - Echocardiogram (2017, 2019, 2022)
+  - Hip replacement surgery (2020)
+  - Cataract surgery, bilateral (2021)
+- **Current Medications:**
+  - Apixaban 5mg twice daily
+  - Metoprolol 25mg twice daily
+  - Latanoprost eye drops nightly
+  - Acetaminophen 500mg as needed
+- **Recent Labs:**
+  - INR: Not applicable (on DOAC)
+  - Echocardiogram: EF 55%, moderate left atrial enlargement
+- **Notable Events:**
+  - Cardiology follow-ups (quarterly)
+  - Ophthalmology follow-ups (biannually)
+  - Physical therapy post-hip replacement (2020)
+
+## Patient 12: James Thomas
+- **Age:** 66
+- **Sex:** Male
+- **Medical History:**
+  - COPD (diagnosed 2015)
+  - Hypertension (diagnosed 2010)
+  - Gout (diagnosed 2018)
+- **Procedures/Surgeries:**
+  - Pulmonary function tests (annual)
+  - Chest X-ray (2019, 2022)
+- **Current Medications:**
+  - Tiotropium inhaler daily
+  - Albuterol inhaler as needed
+  - Lisinopril 20mg daily
+  - Allopurinol 300mg daily
+- **Recent Labs:**
+  - Spirometry: FEV1 65% predicted
+  - Uric acid: 6.2 mg/dL
+  - BP: 138/82 mmHg
+- **Notable Events:**
+  - COPD exacerbation requiring antibiotics (2020)
+  - Annual influenza vaccination
+  - Pneumococcal vaccination (2018)
+
+## Patient 13: Nancy White
+- **Age:** 45
+- **Sex:** Female
+- **Medical History:**
+  - Fibromyalgia (diagnosed 2018)
+  - Generalized Anxiety Disorder (diagnosed 2016)
+  - Migraines (diagnosed 2010)
+- **Procedures/Surgeries:**
+  - MRI brain (2015)
+  - Trigger point injections (2019, 2021)
+- **Current Medications:**
+  - Duloxetine 60mg daily
+  - Pregabalin 75mg twice daily
+  - Sumatriptan 100mg as needed
+- **Recent Labs:**
+  - All labs within normal limits
+- **Notable Events:**
+  - Pain management consultations (quarterly)
+  - Annual physical examinations
+
+## Patient 14: Richard Thompson
+- **Age:** 78
+- **Sex:** Male
+- **Medical History:**
+  - Parkinson's Disease (diagnosed 2018)
+  - Hypertension (diagnosed 2005)
+  - Benign Prostatic Hyperplasia (diagnosed 2012)
+- **Procedures/Surgeries:**
+  - MRI brain (2018)
+  - Cataract surgery, right eye (2020)
+  - Transurethral resection of prostate (TURP) (2016)
+- **Current Medications:**
+  - Carbidopa/Levodopa 25/100mg three times daily
+  - Lisinopril 20mg daily
+  - Tamsulosin 0.4mg daily
+- **Recent Labs:**
+  - BP: 134/76 mmHg
+  - PSA: 1.2 ng/mL
+- **Notable Events:**
+  - Neurology follow-ups (quarterly)
+  - Fall risk assessment (2021)
+  - Physical therapy (2019, 2022)
+
+## Patient 15: Karen Lewis
+- **Age:** 38
+- **Sex:** Female
+- **Medical History:**
+  - Type 1 Diabetes (diagnosed 2000)
+  - Hashimoto's Thyroiditis (diagnosed 2015)
+  - Depression (diagnosed 2018)
+- **Procedures/Surgeries:**
+  - Insulin pump placement (2018)
+  - Continuous glucose monitor placement (2020)
+- **Current Medications:**
+  - Insulin via pump (variable dosing)
+  - Levothyroxine 112mcg daily
+  - Sertraline 50mg daily
+- **Recent Labs:**
+  - HbA1c: 7.2%
+  - TSH: 2.5 mIU/L (normal range)
+- **Notable Events:**
+  - Endocrinology follow-ups (quarterly)
+  - Annual diabetic retinopathy screening
+  - Diabetes education sessions (annual)
+
+## Patient 16: Joseph Clark
+- **Age:** 50
+- **Sex:** Male
+- **Medical History:**
+  - Essential Hypertension (diagnosed 2013)
+  - Chronic sinusitis (diagnosed 2015)
+  - Acid reflux/GERD (diagnosed 2017)
+- **Procedures/Surgeries:**
+  - Sinus CT scan (2016)
+  - Upper endoscopy (2018)
+  - Colonoscopy (2022)
+- **Current Medications:**
+  - Losartan 50mg daily
+  - Omeprazole 20mg daily
+  - Fluticasone nasal spray daily
+- **Recent Labs:**
+  - BP: 136/84 mmHg
+  - Comprehensive metabolic panel: Within normal limits
+- **Notable Events:**
+  - Annual physical examinations
+  - ENT follow-up (2022)
+
+## Patient 17: Sandra Walker
+- **Age:** 70
+- **Sex:** Female
+- **Medical History:**
+  - Heart Failure with Preserved Ejection Fraction (diagnosed 2019)
+  - Type 2 Diabetes (diagnosed 2010)
+  - Chronic Kidney Disease Stage 3 (diagnosed 2020)
+- **Procedures/Surgeries:**
+  - Echocardiogram (2019, 2021)
+  - Coronary angiogram (2019)
+  - Cataract surgery, bilateral (2018)
+- **Current Medications:**
+  - Furosemide 40mg daily
+  - Carvedilol 12.5mg twice daily
+  - Metformin 500mg twice daily
+  - Lisinopril 10mg daily
+- **Recent Labs:**
+  - BNP: 380 pg/mL (elevated)
+  - eGFR: 52 mL/min/1.73m² (moderately reduced)
+  - HbA1c: 7.3%
+- **Notable Events:**
+  - Heart failure hospitalization (2020)
+  - Cardiology follow-ups (quarterly)
+  - Nephrology follow-ups (biannually)
+
+## Patient 18: Charles Martin
+- **Age:** 60
+- **Sex:** Male
+- **Medical History:**
+  - Dyslipidemia (diagnosed 2012)
+  - Prediabetes (diagnosed 2018)
+  - Essential hypertension (diagnosed 2014)
+- **Procedures/Surgeries:**
+  - Stress test (2019)
+  - Colonoscopy (2021)
+- **Current Medications:**
+  - Rosuvastatin 10mg daily
+  - Lisinopril 10mg daily
+- **Recent Labs:**
+  - LDL: 112 mg/dL
+  - HbA1c: 6.3% (prediabetic range)
+  - BP: 132/80 mmHg
+- **Notable Events:**
+  - Annual wellness visits
+  - Nutritional counseling (2019)
+
+## Patient 19: Margaret Harris
+- **Age:** 82
+- **Sex:** Female
+- **Medical History:**
+  - Chronic Atrial Fibrillation (diagnosed 2015)
+  - Osteoarthritis (diagnosed 2005)
+  - Age-related macular degeneration (diagnosed 2018)
+- **Procedures/Surgeries:**
+  - Total knee replacement, right (2016)
+  - Echocardiogram (2015, 2018, 2021)
+  - Cataract surgery, bilateral (2019)
+- **Current Medications:**
+  - Warfarin 5mg daily (dose adjusted based on INR)
+  - Metoprolol 25mg twice daily
+  - Acetaminophen 500mg as needed
+  - AREDS2 vitamin supplement daily
+- **Recent Labs:**
+  - INR: 2.3 (target 2-3)
+  - Echocardiogram: EF 52%, left atrial enlargement
+- **Notable Events:**
+  - Falls risk assessment (2020)
+  - Weekly INR monitoring
+  - Ophthalmology follow-ups (quarterly)
+
+## Patient 20: Daniel Scott
+- **Age:** 40
+- **Sex:** Male
+- **Medical History:**
+  - Major Depressive Disorder (diagnosed 2019)
+  - Low back pain (diagnosed 2017)
+  - Insomnia (diagnosed 2020)
+- **Procedures/Surgeries:**
+  - Lumbar spine MRI (2018)
+  - Sleep study (2021)
+- **Current Medications:**
+  - Escitalopram 20mg daily
+  - Cyclobenzaprine 10mg as needed
+  - Trazodone 50mg at bedtime
+- **Recent Labs:**
+  - All labs within normal limits
+- **Notable Events:**
+  - Psychiatric follow-ups (monthly)
+  - Physical therapy for back pain (2018, 2021)
+  - Annual physical examinations
