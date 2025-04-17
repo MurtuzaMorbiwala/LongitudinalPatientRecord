@@ -102,6 +102,19 @@ class Neo4jLoader:
                id=med_data['id'],
                properties=properties)
 
+    def create_care_plan_node(self, tx, care_plan_data: Dict):
+        query = """
+        MATCH (p:Patient {id: $patient_id})
+        MERGE (cp:CarePlan {id: $id})
+        SET cp += $properties
+        MERGE (p)-[:HAS_CARE_PLAN]->(cp)
+        """
+        properties = {k: v for k, v in care_plan_data.items() 
+                    if k not in ['patient_id']}
+        tx.run(query, patient_id=care_plan_data['patient_id'],
+               id=care_plan_data['id'],
+               properties=properties)
+
     def create_clinical_note_node(self, tx, note_data: Dict):
         query = """
         MATCH (p:Patient {id: $patient_id})
@@ -110,12 +123,35 @@ class Neo4jLoader:
         SET n += $properties
         MERGE (p)-[:HAS_NOTE]->(n)
         MERGE (n)-[:DOCUMENTED_DURING]->(e)
+        WITH n
+        MATCH (c:Condition {id: $related_condition_id})
+        WHERE $related_condition_id IS NOT NULL
+        MERGE (n)-[:REFERENCES_CONDITION]->(c)
+        WITH n
+        MATCH (pr:Procedure {id: $related_procedure_id})
+        WHERE $related_procedure_id IS NOT NULL
+        MERGE (n)-[:REFERENCES_PROCEDURE]->(pr)
+        WITH n
+        MATCH (o:Observation {id: $related_observation_id})
+        WHERE $related_observation_id IS NOT NULL
+        MERGE (n)-[:REFERENCES_OBSERVATION]->(o)
+        WITH n
+        MATCH (m:MedicationRequest {id: $related_medication_id})
+        WHERE $related_medication_id IS NOT NULL
+        MERGE (n)-[:REFERENCES_MEDICATION]->(m)
         """
         properties = {k: v for k, v in note_data.items() 
-                    if k not in ['patient_id', 'encounter_id']}
-        tx.run(query, patient_id=note_data['patient_id'],
+                    if k not in ['patient_id', 'encounter_id', 
+                               'related_condition_id', 'related_procedure_id',
+                               'related_observation_id', 'related_medication_id']}
+        tx.run(query, 
+               patient_id=note_data['patient_id'],
                encounter_id=note_data['encounter_id'],
                id=note_data['id'],
+               related_condition_id=note_data.get('related_condition_id'),
+               related_procedure_id=note_data.get('related_procedure_id'),
+               related_observation_id=note_data.get('related_observation_id'),
+               related_medication_id=note_data.get('related_medication_id'),
                properties=properties)
 
     def load_patient_data(self, file_path: str):
@@ -150,7 +186,12 @@ class Neo4jLoader:
                 for med_request in data['MedicationRequests']:
                     session.execute_write(self.create_medication_request_node, med_request)
 
-            # Create ClinicalNote nodes
+            # Create CarePlan nodes
+            if 'CarePlans' in data:
+                for care_plan in data['CarePlans']:
+                    session.execute_write(self.create_care_plan_node, care_plan)
+
+            # Create ClinicalNote nodes (after all other entities for references)
             if 'ClinicalNotes' in data:
                 for note in data['ClinicalNotes']:
                     session.execute_write(self.create_clinical_note_node, note)

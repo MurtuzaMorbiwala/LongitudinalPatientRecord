@@ -24,8 +24,8 @@
 | type | string | Visit type (ER, follow-up, etc.) |
 | period_start | datetime | Start date/time |
 | period_end | datetime | End date/time |
-| reason_code | string | Reason for visit |
-| service_provider | string | Organization |
+| reason_code | string | Reason for visit (ICD code) |
+| service_provider | string | Healthcare provider organization |
 
 ## 3. Condition
 
@@ -34,11 +34,11 @@
 | id | string | Primary Key |
 | patient_id | string | Foreign Key → Patient(id) |
 | encounter_id | string | Foreign Key → Encounter(id) |
-| code | string | Diagnosis code (ICD-10/SNOMED) |
-| clinical_status | string | Active / Resolved |
-| onset_date | datetime | When condition began |
-| abatement_date | datetime | When condition ended (if resolved) |
-| recorded_date | datetime | Date of recording |
+| code | string | Condition code (ICD/SNOMED) |
+| clinical_status | string | Active/Resolved/etc. |
+| onset_date | datetime | When condition started |
+| abatement_date | datetime | When condition resolved |
+| recorded_date | datetime | When condition was recorded |
 
 ## 4. Observation
 
@@ -47,12 +47,12 @@
 | id | string | Primary Key |
 | patient_id | string | Foreign Key → Patient(id) |
 | encounter_id | string | Foreign Key → Encounter(id) |
-| code | string | LOINC code (e.g., BP, glucose) |
-| value | string | Measurement value |
-| unit | string | Unit of measure |
-| interpretation | string | Normal, abnormal, etc. |
-| effective_date | datetime | Date/time of observation |
-| status | string | Final, amended, etc. |
+| code | string | Observation code (LOINC) |
+| value | string | Observation value |
+| unit | string | Unit of measurement |
+| interpretation | string | High/Low/Normal |
+| effective_date | datetime | When observation was made |
+| status | string | Final/Preliminary/etc. |
 
 ## 5. Procedure
 
@@ -61,10 +61,10 @@
 | id | string | Primary Key |
 | patient_id | string | Foreign Key → Patient(id) |
 | encounter_id | string | Foreign Key → Encounter(id) |
-| code | string | CPT/SNOMED code |
-| performed_date | datetime | Date/time of procedure |
-| status | string | Completed / In-progress |
-| performer | string | Practitioner or organization |
+| code | string | Procedure code (CPT/SNOMED) |
+| performed_date | datetime | When procedure was done |
+| status | string | Completed/In Progress/etc. |
+| performer | string | Healthcare provider name |
 
 ## 6. MedicationRequest
 
@@ -73,36 +73,60 @@
 | id | string | Primary Key |
 | patient_id | string | Foreign Key → Patient(id) |
 | encounter_id | string | Foreign Key → Encounter(id) |
-| medication_code | string | RxNorm or custom code |
+| medication_code | string | Medication code (RxNorm) |
 | authored_on | datetime | When prescribed |
-| dosage_instruction | string | Dosage info |
-| status | string | Active / Completed |
-| intent | string | Order / Plan |
+| dosage_instruction | string | Dosage instructions |
+| status | string | Active/Completed/etc. |
+| intent | string | Order/Plan/etc. |
 
-## 7. CarePlan
-
-| Column Name | Type | Description |
-|-------------|------|-------------|
-| id | string | Primary Key |
-| patient_id | string | Foreign Key → Patient(id) |
-| status | string | Active / Completed |
-| intent | string | Plan / Order / Option |
-| title | string | Care plan title |
-| period_start | datetime | Start date |
-| period_end | datetime | End date |
-
-## 8. ClinicalNote
+## 7. ClinicalNote
 
 | Column Name | Type | Description |
 |-------------|------|-------------|
 | id | string | Primary Key |
 | patient_id | string | Foreign Key → Patient(id) |
-| encounter_id | string | (optional) FK → Encounter(id) |
-| related_condition_id | string | (optional) FK → Condition(id) |
-| related_procedure_id | string | (optional) FK → Procedure(id) |
-| related_observation_id | string | (optional) FK → Observation(id) |
-| related_medication_id | string | (optional) FK → MedicationRequest(id) |
-| author | string | Who wrote the note |
-| note_text | text | Full unstructured text |
-| created_on | datetime | When the note was created |
-| note_type | string | E.g., progress note, discharge summary, etc. |
+| encounter_id | string | Foreign Key → Encounter(id) |
+| related_condition_id | string | Foreign Key → Condition(id) |
+| related_procedure_id | string | Foreign Key → Procedure(id) |
+| related_observation_id | string | Foreign Key → Observation(id) |
+| related_medication_id | string | Foreign Key → MedicationRequest(id) |
+| author | string | Note author |
+| note_text | string | Note content |
+| created_on | datetime | When note was created |
+| note_type | string | Progress/Procedure/etc. |
+
+## 8. CarePlan
+
+| Column Name | Type | Description |
+|-------------|------|-------------|
+| id | string | Primary Key |
+| patient_id | string | Foreign Key → Patient(id) |
+| status | string | Active/Completed/etc. |
+| intent | string | Plan/Order/etc. |
+| title | string | Plan title |
+| period_start | datetime | Start of care plan |
+| period_end | datetime | End of care plan |
+
+## Relationships
+
+1. Patient Relationships:
+   - Patient -[HAD_ENCOUNTER]-> Encounter
+   - Patient -[HAS_CONDITION]-> Condition
+   - Patient -[HAS_OBSERVATION]-> Observation
+   - Patient -[UNDERWENT]-> Procedure
+   - Patient -[HAS_MEDICATION]-> MedicationRequest
+   - Patient -[HAS_NOTE]-> ClinicalNote
+   - Patient -[HAS_CARE_PLAN]-> CarePlan
+
+2. Event Relationships:
+   - Condition -[DIAGNOSED_DURING]-> Encounter
+   - Observation -[OBSERVED_DURING]-> Encounter
+   - Procedure -[PERFORMED_DURING]-> Encounter
+   - MedicationRequest -[PRESCRIBED_DURING]-> Encounter
+   - ClinicalNote -[DOCUMENTED_DURING]-> Encounter
+
+3. Clinical Note References:
+   - ClinicalNote -[REFERENCES_CONDITION]-> Condition
+   - ClinicalNote -[REFERENCES_PROCEDURE]-> Procedure
+   - ClinicalNote -[REFERENCES_OBSERVATION]-> Observation
+   - ClinicalNote -[REFERENCES_MEDICATION]-> MedicationRequest
